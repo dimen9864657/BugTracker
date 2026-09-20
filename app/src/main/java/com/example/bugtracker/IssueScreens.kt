@@ -220,6 +220,7 @@ fun FormScreen(vm: IssueViewModel) {
 
         Button(
             onClick = { vm.submit(false) },
+            enabled = title.isNotBlank(),
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Submit")
